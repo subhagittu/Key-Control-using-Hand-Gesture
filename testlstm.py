@@ -7,7 +7,7 @@ from cvzone.HandTrackingModule import HandDetector
 cap = cv2.VideoCapture(0)
 detector = HandDetector(maxHands=1)
 classifier = Classifier("Model/keras_model.h5" , "Model/labels.txt")
-labels = ["A","B","C"]
+labels = ["LEFT","RIGHT","UP","DOWN"]
 counter = 0
 imgSize = 300
 offset = 20
